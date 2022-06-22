@@ -89,6 +89,8 @@
 //         console.log (i)
 //     }
 
+// -------------------------------------- Pourquoi switch ne fonctionne pas ? ----------------------------------------------
+
 //     // switch (i) {
 //     //     case ((i % 7) === 0):
 //     //         console.log()
