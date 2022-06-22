@@ -77,36 +77,34 @@
 // 07 - Fizzbuzz
 
 // for (i = 0; i <= 100; i++){
-//     if (i % 7 === 0) {
-//         console.log()
-//     }else if ((i % 3 === 0) && (i % 5 === 0)) {
-//         console.log ("FizzBuzz")
-//     }else if (i % 5 === 0) {
-//         console.log ("Buzz")
-//     }else if (i % 3 === 0) {
-//         console.log ("Fizz")
-//     }else {
-//         console.log (i)
-//     }
-
-// -------------------------------------- Pourquoi switch ne fonctionne pas ? ----------------------------------------------
-
-//     // switch (i) {
-//     //     case ((i % 7) === 0):
-//     //         console.log()
-//     //         break;        
-//     //     case (((i % 3) === 0) && ((i % 5) === 0)):
-//     //         console.log ("FizzBuzz")
-//     //         break;
-//     //     case ((i % 5) === 0):
-//     //         console.log ("Buzz")
-//     //         break;
-//     //     case (i % 3 === 0):
-//     //         console.log ("Fizz")
-//     //         break;
-//     //     default:
-//     //         console.log (i)
+//     // if (i % 7 === 0) {
+//     //     console.log()
+//     // }else if ((i % 3 === 0) && (i % 5 === 0)) {
+//     //     console.log ("FizzBuzz")
+//     // }else if (i % 5 === 0) {
+//     //     console.log ("Buzz")
+//     // }else if (i % 3 === 0) {
+//     //     console.log ("Fizz")
+//     // }else {
+//     //     console.log (i)
 //     // }
+
+//     switch (i) {
+//         case ((i % 7) === 0):
+//             console.log()
+//             break;        
+//         case (((i % 3) === 0) && ((i % 5) === 0)):
+//             console.log ("FizzBuzz")
+//             break;
+//         case ((i % 5) === 0):
+//             console.log ("Buzz")
+//             break;
+//         case (i % 3 === 0):
+//             console.log ("Fizz")
+//             break;
+//         default:
+//             console.log (i)
+//     }
 // }
 
 
@@ -116,10 +114,12 @@
 // 08 - While
 
 // let total = 0
-// const limit = 55
+// let i = 0
+// const limit = 10
 
-// while (total < limit) {
-//     total = total + 1
+// while (i < limit) {
+//     i ++
+//     total = total + i
 // }
 
 // console.log (total)
@@ -131,7 +131,7 @@
 // 09 - Sans boucle
 
 // const camarades = ["Arthur", "Aurélien", "Cinnie", "Clara", "Danh", "Dushen", "Edaly", "Emad", "Florent", "Florez", "Jad", "Julien", "Lucas", "Lynda", "Magomed", "Wade", "Rayan", "Thomas", "Walid Belka", "Walid Belli"]
-// console.log (camarades[Math.floor(Math.random()*camarades.length)])
+// console.log (camarades[Math.round(Math.random()*camarades.length)])
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -142,7 +142,7 @@
 // const array = []
 
 // for (i=0; i < 20; i++) {
-//     array.push (Math.floor(Math.random() * 100) + 0)
+//     array.push (Math.round(Math.random() * 100) + 0)
 // }
 // console.table (array)
 
@@ -153,3 +153,16 @@
 //     max = array [i]
 // }
 // console.log(`max = ${max}`)
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// décorticage random
+// const min = 0;
+// const max = 100;
+// let result = null;
+// while (result !== 100) {
+//     result = (Math.round(Math.random() * (max)) + min)
+//     console.log (result)
+// }
